@@ -61,7 +61,7 @@ const locations = [
         name: "store", // Loja
         "button text": ["Comprar 10 saúde (10 ouro)", "Comprar arma (30 ouro)", "Ir para a praça da cidade"],
         "button functions": [buyHealth, buyWeapon, goTown],
-        text: "Entrar na loja.",
+        text: "Entrou na loja." + "Oque você deseja fazer ?",
     },
     {
         name: "cave", // caverna
@@ -103,10 +103,6 @@ const locations = [
         text: "Encontra um jogo secreto. Escolhe um número acima. Serão escolhidos aleatoriamente dez números entre 0 e 10. Se o número que escolheres corresponder a um dos números aleatórios, ganhas!"
     }
 ];
-
-//alterando cenário
-// button1.addEventListener('click', trocaCenario()) = document.querySelector('#button1');
-
 
 
 // Botões de inicialização.
@@ -322,4 +318,12 @@ function pick(guess) {
     }
 }
 
-// Alterar bkg 
+
+// Aguarde que o documento esteja completamente carregado
+document.addEventListener("DOMContentLoaded", function () {
+    // Oculta a tela de carregamento e exibe o conteúdo da página após um breve atraso (simulando carregamento)
+    setTimeout(function () {
+        document.getElementById("loader-container").style.display = "none";
+        document.getElementById("content").style.display = "block";
+    }, 2000); // Ajuste o tempo conforme necessário
+});
