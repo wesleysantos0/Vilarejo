@@ -1,0 +1,68 @@
+body {
+    background-image: url('../imagens/castelo-bck.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+
+}
+
+#text {
+    background-color: #0a0a23;
+    color: #ffffff;
+    padding: 10px;
+}
+
+#game {
+    max-width: 500px;
+    max-height: 400px;
+    background-color: #ffffff;
+    color: #ffffff;
+    margin: 30px auto 0px auto;
+    padding: 10px;
+}
+
+#controls,
+#stats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid #0a0a23;
+    color: #0a0a23;
+    padding: 10px;
+}
+
+#monsterStats {
+    display: none;
+    border: 1px solid #0a0a23;
+    background: #c70d0d;
+    color: #ffffff;
+    padding: 5px;
+}
+
+.stat{
+    padding: 0px 10px 0px 0px;
+}
+
+button {
+    cursor:pointer;
+    color:#0a0a23;
+    background-color:#feac32;
+    background-image: linear-gradient(#fecc4c, #ffac33);
+    border: 3px solid #feac32;
+
+  }
+
+.defaut {
+    background-image: url('../imagens/castelo-bck.jpg');
+}
+
+.mercador {
+    background-image: url('../imagens/Mercador.jpg');
+}
