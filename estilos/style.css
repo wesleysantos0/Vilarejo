@@ -157,3 +157,32 @@ button {
     }
 }
 
+/* atencao */
+
+.atencao {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    background-color: #0a0a23;
+    color: #fecc4c;
+    border: 1px solid #c70d0d;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 50vw;
+    height: auto;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    font-size: .8em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.atencao  a{
+    color: #fecc4c;
+    text-decoration: underline;
+}
+
+.atencao > p {
+margin: 2px;
+}
