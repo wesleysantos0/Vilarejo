@@ -177,7 +177,7 @@ function sellWeapon() {
         gold += 15;
         goldText.innerText = gold;
         let currentWeapon = inventory.shift();//
-        text.innerText = "Você vendeu" + currentWeapon + ".";
+        text.innerText = "Você vendeu " + currentWeapon + ".";
         text.innerText += " Em seu inventario você tem: " + inventory;
     } else {
         text.innerText = "Não venda sua UNICA arma!";
