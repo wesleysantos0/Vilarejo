@@ -121,7 +121,6 @@ function update(location) {
     button2.onclick = location["button functions"][1];;
     button3.onclick = location["button functions"][2];;
     text.innerHTML = location.text; // atualizará o emoticon
-    cenario.innerHTML = location[cenario]
 }
 
 
