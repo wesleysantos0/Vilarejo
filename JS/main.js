@@ -87,14 +87,14 @@ const locations = [
         name: "lose", // perdeu
         "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
         "button functions": [restart, restart, restart],
-        text: "You die. &#x2620;"
+        text: "Se fudeu!. &#x2620;"
     },
 
     {
         name: "win", // vitória
         "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
         "button functions": [restart, restart, restart],
-        text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;"
+        text: "Derrotou o dragão! GANHOU O JOGO! &#x1F389;"
     },
     {
         name: "easter egg",
@@ -145,7 +145,7 @@ function buyHealth() {
         goldText.innerText = gold;
         healthText.innerText = health;
     } else {
-        text.innerText = "Não tens ouro suficiente para comprar saúde.";
+        text.innerText = "Não tem ouro suficiente para comprar saúde.";
     }
 }
 
@@ -177,7 +177,7 @@ function sellWeapon() {
         gold += 15;
         goldText.innerText = gold;
         let currentWeapon = inventory.shift();//
-        text.innerText = "Você vendeu " + currentWeapon + ".";
+        text.innerText = "Você vendeu" + currentWeapon + ".";
         text.innerText += " Em seu inventario você tem: " + inventory;
     } else {
         text.innerText = "Não venda sua UNICA arma!";
@@ -209,7 +209,7 @@ function goFight() {
 // Criando o ataque..
 function attack() {
     text.innerText = "O " + monsters[fighting].name + " ataca.";
-    text.innerText += " You attack it with your " + weapons[currentWeapon].name + ".";
+    text.innerText += " Você ataca com seu(sua) " + weapons[currentWeapon].name + ".";
     health -= getMonsterAttackvalue(monsters[fighting].level);
     if (isMonsterHit()) {
         monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
@@ -245,7 +245,7 @@ function isMonsterHit() {
 
 // Função pra desviar do ataque dos inimigos.. 
 function dodge() {
-    text.innerText = "Desvia-te do ataque do " + monsters[fighting].name;
+    text.innerText = "Desviou do ataque do " + monsters[fighting].name;
 }
 
 // Função derrotarMonstro 
