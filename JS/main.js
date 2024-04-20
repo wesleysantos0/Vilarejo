@@ -45,7 +45,7 @@ const weapons = [
 // Monstros 
 const monsters = [
     { name: "slime", level: 2, health: 15 },
-    { name: "fera com presas", level: 8, health: 60 },
+    { name: "dente de sabre", level: 8, health: 60 },
     { name: "dragão", level: 20, health: 300 },
 ]
 
@@ -80,7 +80,7 @@ const locations = [
         name: "kill monster", // monstro morto
         "button text": ["Ir para a praça da cidade", "Ir para a praça da cidade", "Ir para a praça da cidade"],
         "button functions": [goTown, goTown, easterEgg],
-        text: 'O monstro grita "Arg!" quando morre. Ganhas pontos de experiência e encontras ouro.',
+        text: 'O monstro grita "Arg!" quando morre. Ganhou pontos de experiência e encontrou ouro.',
     },
 
     {
@@ -100,7 +100,7 @@ const locations = [
         name: "easter egg",
         "button text": ["2", "8", "Go to town square?"],
         "button functions": [pickTwo, pickEight, goTown],
-        text: "Encontra um jogo secreto. Escolhe um número acima. Serão escolhidos aleatoriamente dez números entre 0 e 10. Se o número que escolheres corresponder a um dos números aleatórios, ganhas!"
+        text: "Voce ncontra um jogo secreto. Escolhe um número acima. Serão escolhidos aleatoriamente dez números entre 0 e 10. Se o número que escolheres corresponder a um dos números aleatórios, ganhas!"
     }
 ];
 
